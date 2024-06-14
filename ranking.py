@@ -3,9 +3,9 @@ import numpy
 import copy
 from bs4 import BeautifulSoup
 
-def get_team_rankings(y1, y2, d1, d2):
+def get_team_rankings(y1, y2, d1, d2, gender):
     # Get array of team names (currently 362 of them)
-    url = 'https://www.ncaa.com/standings/basketball-men/d1'
+    url = 'https://www.ncaa.com/standings/basketball-' + gender + '/d1'
     full = requests.get(url)
     soup = BeautifulSoup(full.text, 'html.parser')
     team_names = soup.find_all('td', class_='standings-team')
@@ -35,7 +35,7 @@ def get_team_rankings(y1, y2, d1, d2):
                     if m == '11' and (int(d) > 30 or int(d) < int(d1)) or (m == '02' and int(d) > 28) or (m == '03' and int(d) > int(d2)):
                         continue
                     else:
-                        url = 'https://www.ncaa.com/scoreboard/basketball-men/d1/' + y + '/' + m + '/' + d + '/all-conf'
+                        url = 'https://www.ncaa.com/scoreboard/basketball-' + gender + '/d1/' + y + '/' + m + '/' + d + '/all-conf'
                         full = requests.get(url)
                         soup = BeautifulSoup(full.text, 'html.parser')
                         teams = soup.find_all('span', class_='gamePod-game-team-name')
@@ -91,13 +91,25 @@ def get_team_rankings(y1, y2, d1, d2):
         idx = vec_r.index(vec_r_sorted[i])
         teams_sorted.append(team_names_text[idx])
         
+    with open(gender + '_rankings.txt', 'w+') as f:
+        for t in teams_sorted:
+            f.write('%s\n' %t)
+        
+    f.close
+            
     return teams_sorted
 
-def team_compare(t1, t2, rankings):
+def team_compare(t1, t2, gender):
+    file1 = open(gender + '_rankings.txt', 'r')
+    rankings = []
+    for t in file1.readlines():
+        rankings.append(t.replace("\n", ""))
+    file1.close()
+     
     r1 = rankings.index(t1)
     r2 = rankings.index(t2)
     # lower number seed is better
     if r1 > r2:
-        return r2
+        return t2
     else:
-        return r1
+        return t1

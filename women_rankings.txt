@@ -1,0 +1,360 @@
+South Carolina
+UConn
+Iowa
+Texas
+Stanford
+UCLA
+LSU
+Ohio St.
+Notre Dame
+Southern California
+NC State
+Utah
+Colorado
+Indiana
+Kansas St.
+Baylor
+West Virginia
+Oregon St.
+Michigan St.
+Duke
+Gonzaga
+Virginia Tech
+Louisville
+Penn St.
+Tennessee
+Oklahoma
+Washington St.
+Nebraska
+Maryland
+Iowa St.
+Creighton
+North Carolina
+Arizona
+Alabama
+Texas A&M
+Ole Miss
+Kansas
+Florida St.
+UNLV
+Auburn
+Washington
+Mississippi St.
+Michigan
+Marquette
+Illinois
+Syracuse
+TCU
+Miami (FL)
+Oklahoma St.
+California
+Middle Tenn.
+Virginia
+Princeton
+Vanderbilt
+Villanova
+Florida
+Minnesota
+Columbia
+Green Bay
+Purdue
+Seton Hall
+Arkansas
+Richmond
+Georgia Tech
+FGCU
+Texas Tech
+Drake
+South Dakota St.
+Missouri
+Boston College
+UCF
+Cincinnati
+BYU
+Saint Joseph's
+George Mason
+Toledo
+Belmont
+Clemson
+Marshall
+Houston
+Santa Clara
+Oregon
+Georgia
+Ball St.
+VCU
+Georgetown
+Stony Brook
+Cleveland St.
+North Texas
+St. John's (NY)
+Rhode Island
+Temple
+Arizona St.
+Davidson
+Eastern Wash.
+DePaul
+Rice
+UNI
+Portland
+Wisconsin
+Harvard
+South Fla.
+Grand Canyon
+East Carolina
+Murray St.
+Wake Forest
+Tulsa
+Montana
+Colorado St.
+Fairfield
+James Madison
+Missouri St.
+Providence
+Kentucky
+Butler
+Troy
+SMU
+Illinois St.
+Jackson St.
+Wyoming
+North Dakota St.
+Memphis
+Kent St.
+Charlotte
+California Baptist
+UC Irvine
+Rutgers
+Northern Ariz.
+UTSA
+Maine
+Chattanooga
+Duquesne
+Old Dominion
+Boise St.
+Pittsburgh
+Oral Roberts
+Liberty
+Hawaii
+Pacific
+Tulane
+Southern Miss.
+San Diego St.
+Norfolk St.
+South Dakota
+Montana St.
+San Francisco
+New Mexico
+Lamar University
+Purdue Fort Wayne
+ULM
+Saint Louis
+UAB
+UIC
+SFA
+Northwestern
+Col. of Charleston
+Vermont
+N.C. A&T
+Penn
+Southern Ind.
+Western Ky.
+Cal Poly
+Brown
+Central Ark.
+Monmouth
+Loyola Chicago
+Louisiana Tech
+Louisiana
+Northern Colo.
+UC Davis
+FIU
+Drexel
+Arkansas St.
+Saint Mary's (CA)
+UAlbany
+San Diego
+App State
+Southeastern La.
+A&M-Corpus Christi
+Fordham
+Air Force
+Nevada
+Bowling Green
+LMU (CA)
+Towson
+George Washington
+Eastern Ky.
+Buffalo
+Fresno St.
+Wichita St.
+Utah Tech
+UT Arlington
+William & Mary
+Idaho
+UC Riverside
+Wright St.
+Southern Ill.
+Long Beach St.
+Abilene Christian
+Idaho St.
+Georgia St.
+Austin Peay
+Fla. Atlantic
+Mercer
+New Mexico St.
+Milwaukee
+UC Santa Barbara
+Delaware
+Wofford
+Ark.-Pine Bluff
+Lipscomb
+ETSU
+Texas St.
+Holy Cross
+Niagara
+Tennessee Tech
+Siena
+Campbell
+UC San Diego
+UNC Greensboro
+Coastal Carolina
+Ga. Southern
+UTEP
+UT Martin
+Southern U.
+Northern Ky.
+Colgate
+St. Thomas (MN)
+Sacred Heart
+Howard
+UIW
+Youngstown St.
+Grambling
+Little Rock
+Dayton
+Cal St. Fullerton
+Western Mich.
+Jacksonville St.
+Morehead St.
+Yale
+Binghamton
+UMES
+Detroit Mercy
+Indiana St.
+Eastern Ill.
+Stetson
+Western Ill.
+Akron
+Boston U.
+Jacksonville
+Lehigh
+NIU
+Oakland
+Denver
+Manhattan
+Bethune-Cookman
+Kansas City
+Samford
+Kennesaw St.
+San Jose St.
+Coppin St.
+Canisius
+Southern Utah
+Ohio
+Cornell
+Weber St.
+Nicholls
+Sacramento St.
+Alabama A&M
+Massachusetts
+Tex. A&M-Commerce
+Loyola Maryland
+North Ala.
+High Point
+New Orleans
+Furman
+North Dakota
+Bucknell
+IUPUI
+La Salle
+Utah Valley
+Northwestern St.
+Sam Houston
+Tarleton St.
+North Florida
+Bryant
+Xavier
+Le Moyne
+St. Bonaventure
+Miami (OH)
+CSU Bakersfield
+Elon
+Omaha
+Quinnipiac
+Valparaiso
+Southeast Mo. St.
+Tennessee St.
+UTRGV
+Hofstra
+Mount St. Mary's
+American
+New Hampshire
+Seattle U
+South Alabama
+Northeastern
+Portland St.
+UMBC
+NJIT
+Pepperdine
+Navy
+Army West Point
+Alcorn
+Bellarmine
+Radford
+Eastern Mich.
+Presbyterian
+Lindenwood
+Florida A&M
+Central Mich.
+Dartmouth
+Bradley
+Iona
+USC Upstate
+Charleston So.
+SIUE
+Lafayette
+Robert Morris
+Morgan St.
+FDU
+CSUN
+UMass Lowell
+Marist
+Merrimack
+N.C. Central
+Rider
+Prairie View
+Winthrop
+Evansville
+Hampton
+UNC Asheville
+Utah St.
+Texas Southern
+Central Conn. St.
+Houston Christian
+Longwood
+Queens (NC)
+Saint Peter's
+Western Caro.
+Gardner-Webb
+Mississippi Val.
+Delaware St.
+UNCW
+LIU
+Alabama St.
+McNeese
+South Carolina St.
+Stonehill
+Wagner
+Chicago St.
+Saint Francis (PA)
