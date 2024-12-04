@@ -81,9 +81,9 @@ def get_team_rankings(y1, y2, d1, d2, gender):
     vec_ATp = mat_AT.dot(vec_p)
     mat_ATA[len(mat_ATA) - 1] = numpy.ones(len(team_names))
     vec_ATp[len(vec_ATp) - 1] = 0
-    vec_r = numpy.linalg.solve(mat_ATA, vec_ATp)
+    vec_r = numpy.linalg.lstsq(mat_ATA, vec_ATp,rcond=None)
 
-    vec_r = vec_r.tolist()
+    vec_r = vec_r[0].tolist()
     vec_r_sorted = copy.deepcopy(vec_r) #need deep copy to leave vec_r unsorted
     vec_r_sorted.sort(reverse=True)
     teams_sorted = []
@@ -91,7 +91,7 @@ def get_team_rankings(y1, y2, d1, d2, gender):
         idx = vec_r.index(vec_r_sorted[i])
         teams_sorted.append(team_names_text[idx])
         
-    with open(gender + '_rankings.txt', 'w+') as f:
+    with open(y1 + '_' + y2 + '_' + gender + '_rankings.txt', 'w+') as f:
         for t in teams_sorted:
             f.write('%s\n' %t)
         
