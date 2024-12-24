@@ -1,9 +1,10 @@
 import requests
 import numpy
 import copy
+import os
 from bs4 import BeautifulSoup
 
-def get_team_rankings(y1, y2, d1, d2, gender):
+def get_team_rankings(y1, y2, m1, m2, d1, d2, gender):
     # Get array of team names (currently 362 of them)
     url = 'https://www.ncaa.com/standings/basketball-' + gender + '/d1'
     full = requests.get(url)
@@ -16,8 +17,16 @@ def get_team_rankings(y1, y2, d1, d2, gender):
     # 28 days - 02
     # 30 days - 11
     # 31 days - 12, 01, 03
-    years = [y1, y2]
-    months = ['11', '12', '01', '02', '03']
+    # don't include 2 years if we are only looking in 1
+    if m2 in ['11', '12']:
+        y2 = y1
+        years = [y1]
+    else:
+        years = [y1, y2]
+    all_months = ['11', '12', '01', '02', '03']
+    idx_1 = all_months.index(m1)
+    idx_2 = all_months.index(m2)
+    months = all_months[idx_1:(idx_2 + 1)]
     days = ['01', '02', '03', '04', '05', '06', '07', 
             '08', '09', '10', '11', '12', '13', '14',
             '15', '16', '17', '18', '19', '20', '21',
@@ -28,15 +37,18 @@ def get_team_rankings(y1, y2, d1, d2, gender):
 
     for y in years:
         for m in months:
-            if (y == years[0] and (m == '01' or m == '02' or m == '03')) or (y == years[1] and (m == '11' or m == '12')):
+            if (y == years[0] and (m == '01' or m == '02' or m == '03')) or (len(years) == 2 and (y == years[1] and (m == '11' or m == '12'))):
                 continue
             else:
                 for d in days:
-                    if m == '11' and (int(d) > 30 or int(d) < int(d1)) or (m == '02' and int(d) > 28) or (m == '03' and int(d) > int(d2)):
+                    if m == m1 and (int(d) > 30 or int(d) < int(d1)) or (m == '02' and int(d) > 28) or (m == m2 and int(d) > int(d2)):
                         continue
                     else:
                         url = 'https://www.ncaa.com/scoreboard/basketball-' + gender + '/d1/' + y + '/' + m + '/' + d + '/all-conf'
-                        full = requests.get(url)
+                        try:
+                            full = requests.get(url)
+                        except:
+                            raise ConnectionError('Unable to connect to website. Check wifi connection')
                         soup = BeautifulSoup(full.text, 'html.parser')
                         teams = soup.find_all('span', class_='gamePod-game-team-name')
                         scores = soup.find_all('span', class_='gamePod-game-team-score')
@@ -90,8 +102,8 @@ def get_team_rankings(y1, y2, d1, d2, gender):
     for i in range(len(vec_r_sorted)):
         idx = vec_r.index(vec_r_sorted[i])
         teams_sorted.append(team_names_text[idx])
-        
-    with open(y1 + '_' + y2 + '_' + gender + '_rankings.txt', 'w+') as f:
+  
+    with open(os.getcwd() + '\\results\\' + m1 + '_' + d1 + '_' + y1 + '__' + m2 + '_' + d2 + '_' + y2 + '_' + gender + '_rankings.txt', 'w+') as f:
         for t in teams_sorted:
             f.write('%s\n' %t)
         
@@ -99,8 +111,8 @@ def get_team_rankings(y1, y2, d1, d2, gender):
             
     return teams_sorted
 
-def team_compare(t1, t2, gender):
-    file1 = open(gender + '_rankings.txt', 'r')
+def team_compare(t1, t2, file):
+    file1 = open(os.getcwd() + '\\results\\' + file + '.txt', 'r')
     rankings = []
     for t in file1.readlines():
         rankings.append(t.replace("\n", ""))

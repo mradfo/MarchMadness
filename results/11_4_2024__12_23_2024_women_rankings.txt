@@ -1,0 +1,362 @@
+Texas
+South Carolina
+Kansas St.
+Notre Dame
+Southern California
+UConn
+UCLA
+Oklahoma
+TCU
+LSU
+Ohio St.
+Michigan St.
+West Virginia
+Tennessee
+Michigan
+Vanderbilt
+Duke
+Georgia Tech
+Florida St.
+Baylor
+Alabama
+North Carolina
+NC State
+Ole Miss
+Utah
+Oklahoma St.
+Maryland
+Iowa
+Oregon
+California
+Kentucky
+Mississippi St.
+Nebraska
+Creighton
+Stanford
+Minnesota
+Richmond
+Illinois
+Indiana
+South Dakota St.
+Louisville
+Virginia Tech
+Auburn
+Belmont
+Harvard
+Iowa St.
+Murray St.
+Saint Joseph's
+Ball St.
+UNLV
+Penn St.
+South Fla.
+Florida
+UNI
+George Mason
+Washington
+Columbia
+James Madison
+Missouri
+Texas Tech
+Villanova
+UTSA
+St. John's (NY)
+Middle Tenn.
+Princeton
+Fairfield
+Clemson
+Cincinnati
+Kansas
+Colorado
+Oral Roberts
+Grand Canyon
+Boston College
+Montana St.
+Portland
+BYU
+Arizona
+Texas A&M
+Miami (FL)
+SFA
+Seton Hall
+Drake
+Marquette
+Wisconsin
+Col. of Charleston
+Tulane
+Coastal Carolina
+Missouri St.
+Northern Ariz.
+Syracuse
+Boise St.
+Colorado St.
+Quinnipiac
+Butler
+FGCU
+SMU
+Lamar University
+Wyoming
+Virginia
+Cleveland St.
+DePaul
+San Diego St.
+Wake Forest
+Temple
+East Carolina
+Southern Ind.
+Northwestern
+Georgetown
+San Francisco
+Liberty
+Georgia
+UC Davis
+Old Dominion
+Buffalo
+Bowling Green
+Duquesne
+Hawaii
+Purdue
+Green Bay
+VCU
+Arkansas
+Kent St.
+Davidson
+Gonzaga
+North Dakota St.
+Lehigh
+Washington St.
+Abilene Christian
+Vermont
+Rice
+Norfolk St.
+Rutgers
+Arizona St.
+Pittsburgh
+Rhode Island
+Providence
+New Mexico
+UIC
+Idaho
+Troy
+New Mexico St.
+UCF
+Western Ky.
+Penn
+Oregon St.
+Illinois St.
+Wichita St.
+Louisiana
+Purdue Fort Wayne
+Tulsa
+Marshall
+Toledo
+UAlbany
+UC Irvine
+Northern Colo.
+North Texas
+Jacksonville
+Drexel
+UTEP
+Southeastern La.
+A&M-Corpus Christi
+Miami (OH)
+Colgate
+Tarleton St.
+Brown
+Holy Cross
+Coppin St.
+Air Force
+UAB
+Montana
+ULM
+Central Ark.
+Houston
+Eastern Ky.
+UTRGV
+Tennessee Tech
+Fresno St.
+Nicholls
+Fordham
+Santa Clara
+Denver
+UT Martin
+Dayton
+Pacific
+Georgia St.
+Texas St.
+UNC Greensboro
+Alabama A&M
+Jacksonville St.
+Fla. Atlantic
+Campbell
+Saint Louis
+Saint Mary's (CA)
+St. Thomas (MN)
+Lindenwood
+Southern U.
+Idaho St.
+Navy
+Cal Poly
+Bradley
+Lipscomb
+Massachusetts
+Chattanooga
+Louisiana Tech
+Wofford
+Bucknell
+Arkansas St.
+Detroit Mercy
+Sacramento St.
+Kennesaw St.
+UMES
+Omaha
+Howard
+ETSU
+Pepperdine
+Nevada
+Army West Point
+UC Santa Barbara
+Memphis
+Northern Ky.
+Delaware
+Central Mich.
+Elon
+UC Riverside
+Manhattan
+N.C. A&T
+Furman
+Maine
+Akron
+Xavier
+Sam Houston
+Marist
+Stony Brook
+Austin Peay
+UIW
+NIU
+LMU (CA)
+High Point
+UC San Diego
+Long Beach St.
+Eastern Ill.
+Robert Morris
+FDU
+Western Ill.
+Eastern Wash.
+North Ala.
+Loyola Chicago
+Bellarmine
+Little Rock
+Utah Valley
+Bryant
+South Dakota
+Oakland
+UT Arlington
+FIU
+Mount St. Mary's
+Cornell
+Merrimack
+Ga. Southern
+Towson
+Southern Miss.
+Houston Christian
+Hofstra
+La Salle
+George Washington
+California Baptist
+Loyola Maryland
+Portland St.
+San Diego
+New Orleans
+Grambling
+Charlotte
+Longwood
+Valparaiso
+Western Caro.
+West Ga.
+San Jose St.
+App State
+UNCW
+North Dakota
+Florida A&M
+Western Mich.
+Binghamton
+UMBC
+Northwestern St.
+Indiana St.
+Samford
+Youngstown St.
+Cal St. Fullerton
+Hampton
+Siena
+NJIT
+Mercer
+Milwaukee
+Southern Utah
+Mercyhurst
+Sacred Heart
+Monmouth
+Stetson
+Utah Tech
+Rider
+South Alabama
+Eastern Mich.
+Charleston So.
+Weber St.
+Wright St.
+Morehead St.
+Dartmouth
+Utah St.
+Saint Peter's
+Tennessee St.
+IU Indy
+Evansville
+Lafayette
+New Hampshire
+William & Mary
+Jackson St.
+Boston U.
+Morgan St.
+Gardner-Webb
+Iona
+Stonehill
+Winthrop
+Yale
+Kansas City
+Alcorn
+East Texas A&M
+Radford
+St. Bonaventure
+Texas Southern
+Prairie View
+UMass Lowell
+Ark.-Pine Bluff
+Bethune-Cookman
+Central Conn. St.
+Canisius
+North Florida
+Southeast Mo. St.
+SIUE
+LIU
+Southern Ill.
+UNC Asheville
+Seattle U
+Mississippi Val.
+CSUN
+McNeese
+American
+Niagara
+Queens (NC)
+Ohio
+Le Moyne
+CSU Bakersfield
+Chicago St.
+Saint Francis
+Presbyterian
+USC Upstate
+Alabama St.
+Delaware St.
+Northeastern
+South Carolina St.
+N.C. Central
+Wagner
