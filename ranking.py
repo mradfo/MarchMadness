@@ -6,13 +6,17 @@ from bs4 import BeautifulSoup
 
 def get_team_rankings(y1, y2, m1, m2, d1, d2, gender):
     # Get array of team names (currently 362 of them)
-    url = 'https://www.ncaa.com/standings/basketball-' + gender + '/d1'
+    if gender == 'men':
+        genderString = ""
+    elif gender == 'women':
+        genderString = "womens-"
+    url = 'https://www.cbssports.com/' + genderString + 'college-basketball/standings/'
     full = requests.get(url)
     soup = BeautifulSoup(full.text, 'html.parser')
-    team_names = soup.find_all('td', class_='standings-team')
+    team_names = soup.find_all('span', class_='TeamName')
     team_names_text = []
     for name in team_names:
-        team_names_text.append(name.text)
+        team_names_text.append(name.text.strip())
 
     # 28 days - 02
     # 30 days - 11
@@ -44,42 +48,41 @@ def get_team_rankings(y1, y2, m1, m2, d1, d2, gender):
                     if m == m1 and (int(d) > 30 or int(d) < int(d1)) or (m == '02' and int(d) > 28) or (m == m2 and int(d) > int(d2)):
                         continue
                     else:
-                        url = 'https://www.ncaa.com/scoreboard/basketball-' + gender + '/d1/' + y + '/' + m + '/' + d + '/all-conf'
+                        url = 'https://www.cbssports.com/' + genderString + 'college-basketball/scoreboard/FBS/' + y + m + d
                         try:
                             full = requests.get(url)
                         except:
                             raise ConnectionError('Unable to connect to website. Check wifi connection')
                         soup = BeautifulSoup(full.text, 'html.parser')
-                        teams = soup.find_all('span', class_='gamePod-game-team-name')
-                        scores = soup.find_all('span', class_='gamePod-game-team-score')
-                        for i in range(0, len(teams), 2):
-                            # if teams aren't in the list of all basketball teams, they probably
-                            # weren't that important and won't be involved in the tournament
+                        # teams = soup.find_all('a', class_='team-name-link')                       
+                        # parse each game card so teams and totals are paired reliably
+                        game_cards = soup.find_all('div', class_='single-score-card')
+                        for card in game_cards:
+                            team_els = card.find_all(['span', 'a'], class_='team-name-link')
+                            score_els = card.find_all('td', class_='total')
+                            # need exactly two teams and two totals to form a valid game
+                            if len(team_els) != 2 or len(score_els) != 2:
+                                continue
+                            # convert totals to ints; skip if non-numeric
                             try:
-                                idx_1 = team_names_text.index(teams[i].text)
+                                s1 = int(score_els[0].text.strip())
+                                s2 = int(score_els[1].text.strip())
+                            except (ValueError, IndexError):
+                                continue
+                            # skip teams not in master list
+                            try:
+                                t1 = team_els[0].text.strip()
+                                t2 = team_els[1].text.strip()
+                                idx_1 = team_names_text.index(t1)
+                                idx_2 = team_names_text.index(t2)
+                                print(t1 + ' vs ' + t2 + ': ' + str(s1) + '-' + str(s2))
                             except ValueError:
                                 continue
-                            
-                            # handle empty scores
-                            try:
-                                score_1 = int(scores[i].text)
-                            except ValueError:
-                                continue
-                            
-                            try:
-                                idx_2 = team_names_text.index(teams[i + 1].text)
-                            except ValueError:
-                                continue
-                            
-                            try:
-                                score_2 = int(scores[i + 1].text)
-                            except ValueError:
-                                continue
-                                
+
                             row = numpy.zeros(len(team_names))
                             row[idx_1] = 1
                             row[idx_2] = -1
-                            diff = score_1 - score_2
+                            diff = s1 - s2
                             if mat_A.size == 0:
                                 mat_A = row
                             else:
