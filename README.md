@@ -3,7 +3,7 @@ This calculator uses Massey's Method for team ranking to determine the ranking o
 
 How to use:
 1. Clone repository
->> git clone https://github.com/mradfo/MarchMadness.git
+ 'git clone https://github.com/mradfo/MarchMadness.git'
 2. Install required packages. Additionally install python if not already installed.
 >> pip install -r requirements.txt
 3. Run main.py
