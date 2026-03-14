@@ -3,16 +3,16 @@ This calculator uses Massey's Method for team ranking to determine the ranking o
 
 How to use:
 1. Clone repository
- `git clone https://github.com/mradfo/MarchMadness.git`
+ ```git clone https://github.com/mradfo/MarchMadness.git```
 2. Install required packages. Additionally install python if not already installed.
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 3. Run main.py
-`python main.py`
+```python main.py```
 4. Respond to all command line prompts. You may have to Google some information about the start and end of the basketball season you are looking to calculate rankings for.
 5. Wait. The ranking.py file scrapes the CBS Sports website for all of the scores of all of the games played on each day of the basketball season. There is a new webpage for each day, so this takes a few minutes to complete for an entire season. The command line will print out the current date, so you can track the progress of the program.
 6. Results will be stored in a folder in the current directory titled "results".
 7. Once a results file exists, you can run
-`python compare.py`
+```python compare.py```
 to compare 2 teams against each other. You will need to respond to command line prompts there as well.
 
 Notes:
