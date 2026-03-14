@@ -1,13 +1,20 @@
 # MarchMadness
-Steps:
-- need to know all of the participating teams and place them in some order
-- go through each game in the season and determine which teams were playing, who won, and the score difference
-- create matrix A and vector p with this information
-- calculate ATA and ATp
-- replace last row of ATA with all 1s
-- replace last entry of ATp with 0
-- solve ATAr = ATp for r
-- r is ranking of teams in originally determined order
+This calculator uses Massey's Method for team ranking to determine the ranking of all NCAA basketball teams (mens and womens) to be used to predict the outcomes of the March Madness Tournament. Intended for those good at coding and bad at sports.
+
+How to use:
+1. Clone repository
+>> git clone https://github.com/mradfo/MarchMadness.git
+2. Install required packages. Additionally install python if not already installed.
+>> pip install -r requirements.txt
+3. Run main.py
+>> python main.py
+4. Respond to all command line prompts. You may have to Google some information about the start and end of the basketball season you are looking to calculate rankings for.
+5. Wait. The ranking.py file scrapes the CBS Sports website for all of the scores of all of the games played on each day of the basketball season. There is a new webpage for each day, so this takes a few minutes to complete for an entire season. The command line will print out the current date, so you can track the progress of the program.
+6. Results will be stored in a folder in the current directory titled "results".
+7. Once a results file exists, you can run
+>> python compare.py
+to compare 2 teams against each other. You will need to respond to command line prompts there as well.
 
 Notes:
-- tied games are represented by a 0 in p
+1. If anything stops working, the CBS sports website may have changed the HTML within their website. Since this program relies on web scraping, it will break if this happens. Open a new issue in GitHub if you notice this.
+2. The error checking is not very robust here, so enter the command line arguments in the exact format that is described.
